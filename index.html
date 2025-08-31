@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huawei</title>
     <link rel="stylesheet" href="style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo"></div>
-        <div class="list">
-            <ul>
-                <li>Consumer Products</li>
-                <li>Business Products</li>
-                <li>Support</li>
-                <li>Partners & Developers</li>
-                <li>About Huawei</li>
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white header">
+        <div class="container-fluid px-3">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <div class="logo"></div>
+            </a>
+
+            <!-- Search icon and Mobile menu toggle -->
+            <div class="d-flex align-items-center">
+                <!-- Search icon - visible on all screens -->
+                <div class="search-icon me-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+                <!-- Mobile menu toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- Navigation menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Consumer Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Business Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partners & Developers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Huawei</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-    </header>
+    </nav>
     <div class="banner">
         <a href="#" class="button right">Learn More</a>
     </div>
@@ -207,8 +236,8 @@
         </div>
 
         <div class="buttons-container">
-            <button class="btn">More Events</button>
-            <button class="btn">More News</button>
+            <button class="butn">More Events</button>
+            <button class="butn">More News</button>
         </div>
     </section>
 
@@ -316,6 +345,5 @@
         </div>
     </footer>
 </body>
-
 
 </html>
